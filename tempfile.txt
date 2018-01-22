@@ -1,0 +1,4 @@
+temp file for my api keys to make sure i dont lose this
+
+key: f5ab29a2e940fc1280543f6206e186db
+secret: 71b539d80dd40cdd
