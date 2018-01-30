@@ -1,5 +1,5 @@
 $.get({
-  url: "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=f399a174c74917573c75f080c96162ac&tags=puppy&format=json&nojsoncallback=1&auth_token=72157692669015065-41ea4fed6958bf83&api_sig=07dfdfe1c7c7095f269bae6087777bb2",
+  url: "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=f5ab29a2e940fc1280543f6206e186db&tags=puppy&format=json&nojsoncallback=1",
 })
 .done(function(res) {
   console.log(res.photos.photo)
@@ -10,4 +10,7 @@ $.get({
       .append('<img src="https://farm' + pic.farm + '.staticflickr.com/' + pic.server + '/' + pic.id + '_' + pic.secret + '.jpg" > </img>')
 
   })
+})
+.catch(function() {
+  console.log("error hitting endpoint")
 })
