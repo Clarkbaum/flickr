@@ -21,3 +21,11 @@ input[id=search] {
   border-radius: 4px;
   width: 250px;
 }
+
+#list {
+  padding-top: 10px;
+}
+
+.pic {
+  width: 20%;
+}

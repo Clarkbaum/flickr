@@ -8,8 +8,7 @@ function getFlickr(tags = 'puppy') {
     res.photos.photo.forEach(function(pic) {
       //https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
       $("#list")
-        .append('<div> ' + pic.title + ' </div>')
-        .append('<img src="https://farm' + pic.farm + '.staticflickr.com/' + pic.server + '/' + pic.id + '_' + pic.secret + '.jpg" > </img>')
+        .append('<img class="pic" src="https://farm' + pic.farm + '.staticflickr.com/' + pic.server + '/' + pic.id + '_' + pic.secret + '.jpg" > </img>')
 
     })
   })
