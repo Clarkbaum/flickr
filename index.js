@@ -25,3 +25,8 @@ $('#search').on('keyup', function(e) {
     getFlickr($(this).val());
   }
 })
+
+function handleClick() {
+  console.log("$('#search')", $('#search')[0].value)
+  getFlickr($('#search')[0].value)
+}
